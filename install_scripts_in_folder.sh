@@ -13,19 +13,19 @@ fi
 directory=$1
 output=$2
 
-#find $directory -name '*.sh' | sort -V | grep -f $directory/selected.list
-find $directory -name '*.sh' | sort -V
+#find $directory -name '*.sh' | sort -V | grep -f $directory/selected.list | 
+find $directory -name '*.sh' | sort -V | 
 while read filename
 do
-	echo "Installing $filename"
-	echo "--------------------" >> $output
-	echo "Installing $filename" >> $output
-	#echo "" >> $output
-	$filename 2&>>$output >> $output
-	#echo "" >> $output
-	echo "Done!" >> $output
-	echo "--------------------" >> $output
-	echo "" >> $output
+    echo "Installing $filename"
+    echo "--------------------" >> $output
+    echo "Installing $filename" >> $output
+    #echo "" >> $output
+    $filename 2&>>$output >> $output
+    #echo "" >> $output
+    echo "Done!" >> $output
+    echo "--------------------" >> $output
+    echo "" >> $output
 done
 wait
 
