@@ -1,19 +1,42 @@
-ds="~/Sources"
+#!/bin/bash
+
+df="$HOME/.fonts"
+if [ -d "$df" ]
+then
+    echo "Directory exists! Skipping ..."
+else
+    echo "Create directory for fonts ..."
+    mkdir $df
+fi
+#export DIR_FONT=$df
+
+ds="$HOME/Sources"
 if [ -d "$ds" ]
 then
     echo "Directory exists! Skipping ..."
 else
     echo "Create directory for Sources ..."
-    #mkdir $ds
+    mkdir $ds
 fi
-export DIRS=$ds
+#export DIR_SRC=$ds
 
-dg="~/GitHub"
+dg="$HOME/GitHub"
 if [ -d "$dg" ]
 then
     echo "Directory exists! Skipping ..."
 else
     echo "Create directory for GitHub ..."
-    #mkdir $dg
+    mkdir $dg
 fi
-export DIRG=$dg
+#export DIR_GH=$dg
+
+do="$HOME/opt"
+if [ -d "$do" ]
+then
+    echo "Directory exists! Skipping ..."
+else
+    echo "Create directory for Options ..."
+    mkdir $do
+fi
+#export DIR_OPT=$do
+
