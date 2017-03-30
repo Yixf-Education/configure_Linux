@@ -49,6 +49,11 @@
 * Show sidebar on --> "right side"
 ### FoxyProxy Standard
 * Import Settings
+* 手动设置
+	1. 新建代理服务器：127.0.0.1, 7070, SOCKS V5, 起名字，设定颜色
+	2. 模式订阅：起名字，订阅网址如下，添加代理服务器，更新频率1440分钟，Format设定为AutoProxy，Obfuscations设定为Base64
+		* https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
+		* http://www.woodbunny.com/gfwlist.txt
 ### FVD Speed Dial
 * Settings --> Sync（输入账户同步/下载）
 ### Google Translator
