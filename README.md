@@ -13,5 +13,5 @@
 1. 设置代理：`00_proxy.sh`，安装完成后**必须**手动设置代理，确保正常后设置为开机自启动。
 2. 安装必需工具：`./install_scripts_in_folder.sh 01_essential 01.log`
 3. 安装常用软件：`./install_scripts_in_folder.sh 02_software 02.log`
-4. 
+4. 在图形界面下进行设置。
 5. 
