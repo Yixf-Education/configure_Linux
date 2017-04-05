@@ -1,0 +1,23 @@
+#主机别名
+Host XX
+	HostName xx.xx.xx.xx
+	User XXX
+
+#make connection faster, 减少延迟
+GSSAPIAuthentication no
+
+#share ssh session, 多条连接共享
+#ControlMaster auto
+#ControlPath /tmp/ssh_mux_%h_%p_%r
+
+#远程GUI
+ForwardX11 yes
+
+#避免"Write failed: Broken pipe"问题
+#send a "keep alive" signal to the server every 120 seconds
+ServerAliveInterval 240
+ServerAliveCountMax 3
+
+#keep alive for 4h, 长连接
+#ControlPersist 4h
+
