@@ -1,0 +1,36 @@
+priority -20
+
+
+snippet fi "Open file for input"
+my $${1:fi} = "${2:# input filename}";
+open my $${3:I}, '<', $$1 or die "\$0 : failed to open input file '$$1' : $!\n";
+$4
+close $$3 or warn "\$0 : failed to close input file '$$1' : $!\n";
+
+endsnippet
+
+snippet fo "Open file for output"
+my $${1:fo} = "${2:# output filename}";
+open my $${3:O}, '>', $$1 or die "\$0 : failed to open output file '$$1' : $!\n";
+$4
+close $$3 or warn "\$0 : failed to close output file '$$1' : $!\n";
+
+endsnippet
+
+snippet wh "while for file"
+while (<$${1:I}>) {
+	chomp;
+	my @${2:fields} = split /\t/;
+	$0
+}
+endsnippet
+
+snippet fe "foreach"
+foreach my $${1:x} (@${2:array}) {
+	${3:# body...}
+}
+
+endsnippet
+
+
+# vim:ft=snippets:

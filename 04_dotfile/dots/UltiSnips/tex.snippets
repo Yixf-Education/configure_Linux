@@ -1,0 +1,199 @@
+priority -20
+
+extends texmath
+
+
+snippet danx "dan xuan ti" b
+% $1
+\question $0 \stk{}。
+
+\onech{}{}{}{}
+endsnippet
+
+snippet duox "duo xuan ti" b
+% $1
+\question $0 \mtk{}。
+
+\twoch{}{}{}{}
+endsnippet
+
+snippet tk "tian kong ti" b
+% $1
+\question $0 \ltk{}。
+endsnippet
+
+snippet jd "jian da ti" b
+% $1
+\question $2。
+
+\ifprintanswers
+  \else
+    \vspace*{5cm}
+\fi
+
+\begin{solution}
+$0
+\end{solution}
+endsnippet
+
+snippet bc "bian cheng ti" b
+% $1
+\question $2。
+
+\ifprintanswers
+  \else
+    \vspace*{5cm}
+\fi
+
+\begin{solution}
+\begin{lstlisting}
+$0
+\end{lstlisting}
+\end{solution}
+endsnippet
+
+
+
+snippet ht "head and tail" b
+\input{snippet/beamer_head.tex}
+\input{snippet/class_head.tex}
+
+$1
+
+\input{snippet/beamer_toc.tex}
+
+
+$0
+
+
+\input{snippet/class_tail.tex}
+endsnippet
+
+snippet tt "title" b
+\title[$1]{第${2}章\quad ${1:TITLE}}
+\author[Yixf]{伊现富（Yi Xianfu）}
+\institute[TIJMU]{天津医科大学（TIJMU）\\\\ 生物医学工程与技术学院}
+\date{${3:2017}年${4:9}月}
+$0
+endsnippet
+
+snippet fr "beamer frame" b
+\begin{frame}
+  \frametitle{$1}
+    $0
+\end{frame}
+endsnippet
+
+snippet bl "block" b
+\begin{block}{$1}
+$0
+\end{block}
+endsnippet
+
+snippet fb "frame with block" b
+\begin{frame}
+  \frametitle{$1}
+  \begin{block}{$2}
+    $0
+  \end{block}
+\end{frame}
+endsnippet
+
+snippet fbb "frame with blocks" b
+\begin{frame}
+  \frametitle{$1}
+  \begin{block}{$2}
+    $4
+  \end{block}
+  \pause
+  \begin{block}{$3}
+    $5
+  \end{block}
+\end{frame}
+endsnippet
+
+snippet ff "frame with fragile" b
+\begin{frame}[fragile]
+  \frametitle{$1}
+    $0
+\end{frame}
+endsnippet
+
+snippet fc "frame for current" b
+\begin{frame}[label=current]
+  \frametitle{$1}
+    $0
+\end{frame}
+endsnippet
+
+snippet ffc "frame with fragile for current" b
+\begin{frame}[fragile,label=current]
+  \frametitle{$1}
+    $0
+\end{frame}
+endsnippet
+
+snippet pa "pause" b
+\pause
+$0
+endsnippet
+
+snippet vs "vspace" b
+\vspace{${1:1}em}
+$0
+endsnippet
+
+snippet hs "hspace" b
+\hspace{${1:1}em}
+$0
+endsnippet
+
+snippet hr "href" b
+\href{$1}{$0}
+endsnippet
+
+snippet cs "columns" b
+\begin{columns}
+  \column{${1:0.5}\textwidth}
+    $3
+  \column{${2:0.5}\textwidth}
+    $4
+\end{columns}
+endsnippet
+
+snippet ls "lstlisting" b
+\begin{lstlisting}
+$0
+\end{lstlisting}
+endsnippet
+
+snippet ll "lstlisting language" b
+\begin{lstlisting}[language=$1]
+$0
+\end{lstlisting}
+endsnippet
+
+snippet fw "Figure environment with width" b
+\begin{figure}
+  \centering
+  \includegraphics[width=${1:0.9}\textwidth]{$0}
+\end{figure}
+endsnippet
+
+snippet fh "Figure environment with height" b
+\begin{figure}
+  \centering
+  \includegraphics[height=${1:0.8}\textheight]{$0}
+\end{figure}
+endsnippet
+
+snippet fwh "Figure environment with width and height" b
+\begin{figure}
+  \centering
+  \includegraphics[width=${1:0.9}\textwidth,height=${2:0.8}\textheight]{$0}
+\end{figure}
+endsnippet
+
+
+
+# vim:ft=snippets:

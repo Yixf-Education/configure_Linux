@@ -1,0 +1,44 @@
+" ================ Yixf's Settings ========================
+
+" Fix Chinese display
+set fileencodings=utf-8,gb2312,gbk,gb18030,cp936,big5,latin1
+set termencoding=utf-8
+"set encoding=prc
+set encoding=utf-8
+
+" auto wrap lines
+set formatoptions+=1
+set wrap
+set nolist
+nnoremap j gj
+nnoremap k gk
+vnoremap j gj
+vnoremap k gk
+
+" Starting with Vim 7, the filetype of empty .tex files defaults to 'plaintex' instead of 'tex', which results in vim-latex not being loaded. The following changes the default filetype back to 'tex':
+let g:tex_flavor='latex'
+
+" redraw the screen when it mess up
+nnoremap <C-L> :redraw!<CR>
+"nnoremap <C-L> :w <bar> :redraw!<CR>
+
+if has('gui_running')
+  set guioptions-=T  " no toolbar
+  "colorscheme elflord
+  "set lines=60 columns=108 linespace=0
+  if has('gui_win32')
+    set guifont=DejaVu_Sans_Mono:h10:cANSI
+  else
+    set guifont=DejaVu\ Sans\ Mono\ 15
+  endif
+endif
+
+" 使用相对行号
+set number
+set relativenumber
+" 使gj/gk在没有计数的时候按虚拟行移动，有计数的时候按实际行移动（这和相对行数是绝配）
+noremap <silent> <expr> j (v:count == 0 ? 'gj' : 'j')
+noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
+xnoremap <expr> j (v:count == 0 && mode() !=# 'V') ? 'gj' : 'j'
+xnoremap <expr> k (v:count == 0 && mode() !=# 'V') ? 'gk' : 'k'
+

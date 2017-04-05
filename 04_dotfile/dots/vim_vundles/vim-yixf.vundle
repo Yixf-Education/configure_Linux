@@ -1,0 +1,20 @@
+Bundle 'vim-scripts/fcitx.vim'
+
+"Bundle 'Valloric/YouCompleteMe'
+"Bundle 'wincent/command-t'
+Bundle 'Konfekt/FastFold'
+
+"wakatime mess up the screen
+"Bundle 'wakatime/vim-wakatime'
+
+Bundle 'lervag/vimtex'
+"Bundle 'gerw/vim-latex-suite'
+"Bundle 'matze/vim-tex-fold'
+
+Bundle 'nelstrom/vim-markdown-folding'
+Bundle 'suan/vim-instant-markdown'
+"Bundle 'JamshedVesuna/vim-markdown-preview'
+
+Bundle 'vim-scripts/perl-support.vim'
+Bundle 'vim-perl/vim-perl'
+

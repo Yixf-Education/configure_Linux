@@ -1,0 +1,3 @@
+# Restoring Clear Screen (C-l)
+# With this enabled you can use <prefix> C-l to clear the screen.
+bind C-l send-keys 'C-l'
