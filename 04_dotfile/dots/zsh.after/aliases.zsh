@@ -8,6 +8,7 @@ alias egrep='egrep --color=auto'
 alias wget='wget -c'
 alias yg='you-get'
 alias yd='proxychains youtube-dl'
+alias ht='htop -u $USER'
 
 # Apt
 alias aa='sudo apt'
