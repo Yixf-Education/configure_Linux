@@ -4,6 +4,11 @@ Bundle 'vim-scripts/fcitx.vim'
 "Bundle 'wincent/command-t'
 Bundle 'Konfekt/FastFold'
 
+" Track the engine.
+Bundle 'SirVer/ultisnips'
+" Snippets are separated from the engine. Add this if you want them:
+Bundle 'honza/vim-snippets'
+
 "wakatime mess up the screen
 "Bundle 'wakatime/vim-wakatime'
 

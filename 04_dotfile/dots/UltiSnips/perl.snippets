@@ -1,6 +1,16 @@
 priority -20
 
 
+snippet pu "use warnings strict utf8"
+#!/usr/bin/perl
+
+use warnings;
+use strict;
+use utf8;
+
+
+endsnippet
+
 snippet fi "Open file for input"
 my $${1:fi} = "${2:# input filename}";
 open my $${3:I}, '<', $$1 or die "\$0 : failed to open input file '$$1' : $!\n";
