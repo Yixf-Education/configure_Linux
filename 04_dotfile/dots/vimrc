@@ -42,3 +42,5 @@ noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 xnoremap <expr> j (v:count == 0 && mode() !=# 'V') ? 'gj' : 'j'
 xnoremap <expr> k (v:count == 0 && mode() !=# 'V') ? 'gk' : 'k'
 
+" Fix: Vim + zshell, ¡°zsh suspended¡± after running a Vim external command
+set shell=zsh\ -l
