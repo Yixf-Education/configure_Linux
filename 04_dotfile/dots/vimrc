@@ -42,5 +42,9 @@ noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 xnoremap <expr> j (v:count == 0 && mode() !=# 'V') ? 'gj' : 'j'
 xnoremap <expr> k (v:count == 0 && mode() !=# 'V') ? 'gk' : 'k'
 
+" 添加空行而不进入插入模式
+nmap <silent> to :call append('.', '')<CR>j
+nmap <silent> tO :call append(line('.')-1, '')<CR>k
+
 " Fix: Vim + zshell, “zsh suspended” after running a Vim external command
 set shell=zsh\ -l
