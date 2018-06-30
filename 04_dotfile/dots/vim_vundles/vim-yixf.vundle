@@ -23,3 +23,6 @@ Bundle 'suan/vim-instant-markdown'
 Bundle 'vim-scripts/perl-support.vim'
 Bundle 'vim-perl/vim-perl'
 
+" minimap for Vim
+Bundle 'severin-lemaignan/vim-minimap'
+"Bundle 'koron/minimap-vim'
