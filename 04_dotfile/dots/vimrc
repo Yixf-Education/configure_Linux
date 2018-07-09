@@ -48,3 +48,8 @@ nmap <silent> tO :call append(line('.')-1, '')<CR>k
 
 " Fix: Vim + zshell, ¡°zsh suspended¡± after running a Vim external command
 set shell=zsh\ -l
+syntax enable
+
+" Disable latex in polyglot to use vimtex
+let g:polyglot_disabled = ['latex']
+
