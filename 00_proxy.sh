@@ -13,8 +13,9 @@ sudo apt install -y proxychains
 sudo sed -i '/^socks4/ s/^/#/' /etc/proxychains.conf
 echo "socks5  127.0.0.1 7070" | sudo tee -a /etc/proxychains.conf
 
-# Ö®ºó±ØÐë½øÐÐÍ¼ÐÎ½çÃæ²Ù×÷£¬Íê³Éºó²Å¿ÉÒÔ¼ÌÐøºóÐøµÄ°²×°ÅäÖÃ£º
-# 1. ´ò¿ªshadowsocks
-# 2. µ¼ÈëÅäÖÃ
-# 3. ²âÊÔ·­Ç½Ð§¹û
-# 4. ÉèÖÃ¿ª»ú×ÔÆô¶¯
+# ä¹‹åŽå¿…é¡»è¿›è¡Œå›¾å½¢ç•Œé¢æ“ä½œï¼Œå®ŒæˆåŽæ‰å¯ä»¥ç»§ç»­åŽç»­çš„å®‰è£…é…ç½®ï¼š
+# 1. æ‰“å¼€shadowsocks
+# 2. å¯¼å…¥é…ç½®
+# 3. æµ‹è¯•ç¿»å¢™æ•ˆæžœ
+# 4. è®¾ç½®å¼€æœºè‡ªå¯åŠ¨
+
