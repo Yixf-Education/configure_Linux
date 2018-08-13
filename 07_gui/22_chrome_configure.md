@@ -19,6 +19,8 @@
 * User-Agent Switcher for Google Chrome#
 * User-Agent Switcher for Chrome#
 * WOT: Web of Trust, Website Reputation Ratings
+* Sci-Hub Links
+* the Paper Link for PubMed
 * 快捷工具#
 * 屏幕截图#
 * 超级拖拽#
