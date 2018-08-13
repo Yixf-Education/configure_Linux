@@ -40,3 +40,12 @@ else
 fi
 #export DIR_OPT=$do
 
+db="$HOME/bin"
+if [ -d "$db" ]
+then
+    echo "Directory exists! Skipping ..."
+else
+    echo "Create directory for fonts ..."
+    mkdir $db
+fi
+#export DIR_BIN=$db

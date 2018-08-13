@@ -1,2 +1,2 @@
-sudo apt install -f unetbootin
+#sudo apt install -f unetbootin
 exit $?

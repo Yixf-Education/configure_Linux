@@ -4,7 +4,7 @@ DIR_SRC="$HOME/Sources"
 
 echo "[Check updates] http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/"
 
-wget -c -P $DIR_SRC http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2016.iso
+wget -c -P $DIR_SRC http://mirrors.ustc.edu.cn/CTAN/systems/texlive/Images/texlive2018.iso
 
 echo "Please install TexLive in GUI!"
 exit 1
