@@ -1,6 +1,7 @@
 priority -20
 
 
+
 snippet pu "use warnings strict utf8"
 #!/usr/bin/perl
 
@@ -11,12 +12,21 @@ use utf8;
 
 endsnippet
 
+snippet md "make directory"
+mkdir $${1:do} unless -d $$1;
+
+endsnippet
+
 snippet fi "Open file for input"
 my $${1:fi} = "${2:# input filename}";
 open my $${3:I}, '<', $$1 or die "\$0 : failed to open input file '$$1' : $!\n";
 $4
 close $$3 or warn "\$0 : failed to close input file '$$1' : $!\n";
 
+endsnippet
+
+snippet sf "split columns to array"
+my @${1:f} = split /${2:\t}/, ${3:$_};
 endsnippet
 
 snippet fo "Open file for output"
