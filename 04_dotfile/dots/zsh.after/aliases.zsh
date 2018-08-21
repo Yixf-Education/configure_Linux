@@ -38,3 +38,7 @@ alias glz='git zlog'
 #alias cat='pygmentize -O style=tango -f console256 -g'
 #alias cat='pygmentize -O style=fruity -f console256 -g'
 
+# conda
+alias sa='source activate'
+alias sda='source deactivate'
+
