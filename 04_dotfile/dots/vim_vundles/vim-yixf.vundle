@@ -26,3 +26,15 @@ Bundle 'vim-perl/vim-perl'
 " minimap for Vim
 Bundle 'severin-lemaignan/vim-minimap'
 "Bundle 'koron/minimap-vim'
+
+" Rainbow Parentheses Improved, shorter code, no level limit, smooth and fast, powerful configuration.
+Bundle 'luochen1990/rainbow'
+
+" Vim plugin for intensely orgasmic commenting
+" Bundle 'scrooloose/nerdcommenter'
+
+" A Vim plugin which shows a git diff in the gutter (sign column) and stages/undoes hunks and partial hunks.
+Bundle 'airblade/vim-gitgutter'
+
+" Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
+" Bundle 'vim-scripts/taglist.vim'
